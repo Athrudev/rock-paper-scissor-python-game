@@ -11,11 +11,6 @@ d={
 user_score = 0
 com_score = 0
 
-def clear_screen():
-    if os.name == 'nt':
-        _ = os.system('cls')
-    else:
-        _ = os.system('clear')
 
 
 def rock_paper_scissors_art():
@@ -53,7 +48,7 @@ def rock_paper_scissors_art():
 def menu(user_name,age):
     global user_score,com_score
     while True:
-        clear_screen()
+        
         print("\n\t\t\t|--------------MENU--------------|")
         print("\t\t\t\t1.Menu\n\t\t\t\t2.Update User Details\n\t\t\t\t3.Start Game\n\t\t\t\t4.View Score\n\t\t\t\t5.Exit")
         print("\t\t\t|--------------------------------|")
@@ -75,7 +70,7 @@ def menu(user_name,age):
             break
     
 def user_details():
-    clear_screen()
+    
     user_name=input("Enter Your Name:")
     age=input("Enter Your age")
     menu(user_name,age)
@@ -92,7 +87,7 @@ def get_computer(l):
     return c
 
 def winner(user_c,com_c):
-    clear_screen()
+    
     if user_c == com_c:
         return "Its a Tie...!" 
     elif(
@@ -110,7 +105,7 @@ def play_game(user_name,age,user_score,com_score):
     rounds=int(input("What do you want to play\n Best of 3 or 5"))
     if rounds==3 or rounds==5:
         for _ in range(rounds):
-            clear_screen()
+            
             
             print("\nPress 'r' for ROCK")
             print("Press 'p' for PAPER")
@@ -154,7 +149,7 @@ def play_game(user_name,age,user_score,com_score):
         
     
 def view_score(user_name):
-        clear_screen()
+        
         global user_score, com_score
         print(f"\n----- Current Scores -----")
         print(f"{user_name}'s score: {user_score}")
