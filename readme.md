@@ -38,7 +38,7 @@ The executable file for Linux systems is located in the following path:
 ```
 build\exe.linux-x86_64-3.12/game
 ```
-(Replace '3.x' with your specific Python version, e.g., 3.9, 3.10, etc.)
+
 
 To run the game on Linux:
 1. Open a terminal
@@ -50,7 +50,7 @@ The executable file for Windows systems is located in the following path:
 ```
 sorry it's not availavble right now
 ```
-(Replace '3.x' with your specific Python version, e.g., 3.9, 3.10, etc.)
+
 
 To run the game on Windows:
 1. Open File Explorer
