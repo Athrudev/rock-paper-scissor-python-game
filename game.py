@@ -71,8 +71,8 @@ def menu(user_name,age):
     
 def user_details():
     
-    user_name=input("Enter Your Name:")
-    age=input("Enter Your age")
+    user_name=input("Enter Your Name: ")
+    age=input("Enter Your age: ")
     menu(user_name,age)
 
 def get_user(l):
@@ -102,7 +102,7 @@ def winner(user_c,com_c):
 
 def play_game(user_name,age,user_score,com_score):
    # global user_score,com_score
-    rounds=int(input("What do you want to play\n Best of 3 or 5"))
+    rounds=int(input("What do you want to play\n Best of 3 or 5: "))
     if rounds==3 or rounds==5:
         for _ in range(rounds):
             
