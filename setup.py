@@ -14,5 +14,5 @@ setup(
     version="0.1",
     description="Your application description",
     options={"build_exe": build_exe_options},
-    executables=[Executable("your_script.py", base=base)]
+    executables=[Executable("game.py", base=base)]
 )
